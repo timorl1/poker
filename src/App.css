@@ -1,3 +1,14 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Card {
+  margin: 15px 15px;
+  height: 300px;
+  width: 200px;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 0 0 5px;
 }

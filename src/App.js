@@ -1,11 +1,24 @@
 import React, { Component } from 'react';
 import './App.css';
+import Card from './components/Card/Card';
+import { cards } from './cards'
+
 
 class App extends Component {
+
   render() {
     return (
       <div className="App">
-        <h1>Tästä se lähtee</h1>
+        {
+          cards.deck.map(card => {
+            return (
+              <Card
+                key={ card.id }
+                land={ card.suit }
+                value={ card.value }/>
+            )
+          })
+        }
       </div>
     );
   }

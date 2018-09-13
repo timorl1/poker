@@ -19,10 +19,6 @@ jobs:
     steps:
       - checkout
 
-      # - run:
-      #     name: update-npm
-      #     command: 'sudo npm install -g npm@6.2.0'
-      # - run: npm cache clean
       # Download and cache dependencies
       - restore_cache:
           keys:
@@ -38,6 +34,6 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
 
       # run tests!
-      - run: npm test
+      # - run: npm test
 
 

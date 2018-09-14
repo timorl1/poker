@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
-import './App.css';
 import Card from './components/Card/Card';
 import { cards } from './cards'
-
+import classes from './App.css';
 
 class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div className={classes.App}>
         {
           cards.deck.map(card => {
             return (

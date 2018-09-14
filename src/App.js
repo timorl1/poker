@@ -13,7 +13,7 @@ class App extends Component {
             return (
               <Card
                 key={ card.id }
-                land={ card.suit }
+                suit={ card.suit }
                 value={ card.value }/>
             )
           })

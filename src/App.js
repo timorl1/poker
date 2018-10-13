@@ -5,11 +5,15 @@ import classes from './App.css';
 
 class App extends Component {
 
+  state = {
+    fiveCards: cards.deck.slice(0, 5)
+  }
+
   render() {
     return (
       <div className={classes.App}>
         {
-          cards.deck.map(card => {
+          this.state.fiveCards.map(card => {
             return (
               <Card
                 key={ card.id }
